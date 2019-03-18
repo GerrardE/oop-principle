@@ -8,7 +8,7 @@ class Job {
     }
   
  apply() {
-        console.log (`Apply to ${this.company} if have ${this.qualification}`)
+        console.log (`Apply to ${this.company} if you have ${this.qualification}`)
     }
 }
 
@@ -23,7 +23,7 @@ class Pwc extends Job {
 }
 
 class Andela extends Job {
-    constructor(programming, company, description, qualification){
+    constructor(company, description, qualification){
         super(company, description, qualification)
         this.description = 'Good job',
         this.qualification = 'Javascript',
@@ -39,5 +39,5 @@ class Andela extends Job {
 const openingPwc = new Pwc;
 const openingAndela = new Andela;
 
-console.log(openingPwc)
-console.log(openingAndela.apply());
+console.log(openingPwc.apply())
+console.log(openingAndela);
